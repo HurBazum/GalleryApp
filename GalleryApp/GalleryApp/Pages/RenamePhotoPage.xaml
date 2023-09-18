@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GalleryApp.Pages.RenamePhotoPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20" Margin="10,10" >
+            <Label Text="{Binding ChangeOldName}" />
+            <Label Text="{Binding Title}" />
+            <Entry x:Name="entryName" TextChanged="EntryName_TextChanged"/>
+            <Button x:Name="renameButton" Text="Изменить" Clicked="RenamePhoto" CornerRadius="25" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
